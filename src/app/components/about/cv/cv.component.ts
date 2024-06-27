@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class CvComponent {
   today: Date = new Date();
-  specificDate = new Date('2024-07-01'); // Example specific date
+  specificDate = new Date('2024-06-27'); // Example specific date
   passed: boolean = false;
 
   constructor() {
