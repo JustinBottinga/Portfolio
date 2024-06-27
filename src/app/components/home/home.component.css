@@ -38,8 +38,8 @@ main {
     margin-right: 3rem;
     background: linear-gradient(
       135deg,
-      rgba(28, 30, 19, 0.4),
-      rgba(28, 30, 19, 0.5)
+      rgba(41, 41, 41, 0.4),
+      rgba(29, 29, 29, 0.5)
     );
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -52,10 +52,10 @@ main {
 
     a {
       text-decoration: none;
-      color: var(--accent);
-      transition: 0.5s ease;
+      color: var(--blue);
+      text-decoration: underline;
       &:hover {
-        color: var(--secondairy);
+        color: var(--accent);
         transition: 0.5s ease;
         cursor: pointer;
       }

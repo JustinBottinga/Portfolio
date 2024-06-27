@@ -1,25 +1,23 @@
 .row {
+  .head {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .header {
     display: flex;
-    width: 100%;
     padding-bottom: 2rem;
 
     a {
-      align-self: center;
-      margin: auto;
-      text-align: center;
+      border: 2px solid var(--text);
+      color: var(--text);
       padding: 0.5rem;
-      border-radius: 3px;
-      color: var(--background);
-      border: 1px solid var(--background);
-      background-color: var(--accent);
-      transition: 0.3s;
+      border-radius: 0.3rem;
 
       &:hover {
-        background-color: var(--background);
+        cursor: pointer;
+        border: 2px solid var(--accent);
         color: var(--accent);
-        border: 1px solid var(--accent);
-        transition: 0.3s;
       }
     }
   }
