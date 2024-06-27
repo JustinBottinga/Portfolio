@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  justify-content: center;
+  bottom: 0px;
+  width: 100vw;
+  background: linear-gradient(
+    135deg,
+    rgba(29, 31, 17, 0.4),
+    rgba(29, 31, 17, 0.5)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 70vw;
+  .socials {
+    width: fit-content;
+
+    a {
+      font-size: 1.1rem;
+      margin: 0.3rem;
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+}

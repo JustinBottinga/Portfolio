@@ -1,1 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --text: #e9eae2;
+  --background: #131409;
+  --primary: #d1f21c;
+  --primary-faded: rgba(209, 242, 28, 0.3);
+  --secondairy: #778911;
+  --accent: #b6c63e;
+  --yellow: #d1f21c;
+  --blue: #3aa5d1;
+  --green: #029890;
+}
+
+body {
+  height: 100vh;
+  font-family: "PT Serif", serif;
+  background-color: var(--background);
+  color: var(--text);
+  padding: 0rem;
+  margin: 0rem;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+  transition: 0.5s ease;
+
+  &:hover {
+    color: var(--secondairy);
+    transition: 0.5s ease;
+  }
+}
+
+.card.line {
+  color: var(--text);
+  margin-bottom: 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(28, 30, 19, 0.4),
+    rgba(28, 30, 19, 0.5)
+  );
+  box-shadow: rgba(225, 255, 0, 0.017) 0px -12px 12px 0px inset,
+    rgba(0, 255, 255, 0.015) 0px -36px 30px 0px inset,
+    rgba(0, 255, 81, 0.01) 0px -79px 40px 0px inset;
+
+  .card-title {
+    font-weight: 700;
+  }
+  p {
+    padding-left: 1rem;
+    span {
+      display: block;
+      position: relative;
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: 700;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 0.625rem;
+        width: 0.625rem;
+        background-color: var(--primary);
+        left: -1rem;
+        z-index: 5;
+        top: 0.625rem;
+        border-radius: 100%;
+      }
+    }
+
+    i {
+      display: block;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: calc(100% - 5.5rem);
+    width: 0.1875rem;
+    top: 4.375rem;
+    background-color: var(--accent);
+    z-index: 4;
+    left: 1.2rem;
+  }
+}
+
+.progress {
+  border-radius: 0px;
+  background-color: rgba(40, 41, 29, 0.5);
+
+  .progress-bar {
+    background-color: var(--secondairy);
+  }
+}
+
+.skills {
+  margin: 1rem;
+  color: var(--text);
+  background: linear-gradient(
+    135deg,
+    rgba(28, 30, 19, 0.4),
+    rgba(28, 30, 19, 0.5)
+  );
+  box-shadow: rgba(225, 255, 0, 0.017) 0px -12px 12px 0px inset,
+    rgba(0, 255, 255, 0.015) 0px -36px 30px 0px inset,
+    rgba(0, 255, 81, 0.01) 0px -79px 40px 0px inset;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(28, 30, 19, 0.4);
+}

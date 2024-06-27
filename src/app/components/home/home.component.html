@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<app-blob appScroll></app-blob>
+<main>
+  <div class="header">
+    <h2>Software developer</h2>
+    <p>
+      {{ calculateYearsPassed() }}-year-old student from the Netherlands,
+      passionate about modern technologies and eager to acquire new skills
+    </p>
+    <div class="links row">
+      <a (click)="scrollTo(about)" class="col-12 col-sm-6">More about me</a>
+      <a (click)="scrollTo(projects)" class="col-12 col-sm-6"
+        >My recent projects</a
+      >
+    </div>
+  </div>
+</main>
+
+<div #about>
+  <app-about></app-about>
+</div>
+
+<div #projects>
+  <app-projects></app-projects>
+</div>
+
+<app-footer></app-footer>
