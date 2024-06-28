@@ -17,5 +17,14 @@
       color: var(--accent);
       text-decoration: underline;
     }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+
+      i {
+        font-size: 1.25rem;
+      }
+    }
   }
 }

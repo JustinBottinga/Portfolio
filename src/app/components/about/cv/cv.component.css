@@ -9,15 +9,15 @@
     padding-bottom: 2rem;
 
     a {
-      border: 2px solid var(--text);
-      color: var(--text);
+      border: 2px solid var(--primary);
+      color: var(--primary);
       padding: 0.5rem;
       border-radius: 0.3rem;
 
       &:hover {
         cursor: pointer;
-        border: 2px solid var(--accent);
-        color: var(--accent);
+
+        background-color: var(--faded);
       }
     }
   }
