@@ -52,15 +52,17 @@ main {
 
     .links {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
 
       a {
         text-decoration: none;
+        margin: 0.25rem 0rem;
         color: var(--primary);
         border: 2px solid var(--primary);
         padding: 0.5rem;
         border-radius: 0.3rem;
         width: fit-content;
+        align-self: start;
 
         &:hover {
           background-color: var(--faded);
