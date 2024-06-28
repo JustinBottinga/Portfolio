@@ -50,14 +50,23 @@ main {
       margin: 0px;
     }
 
-    a {
-      text-decoration: none;
-      color: var(--blue);
-      text-decoration: underline;
-      &:hover {
-        color: var(--accent);
-        transition: 0.5s ease;
-        cursor: pointer;
+    .links {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        text-decoration: none;
+        color: var(--primary);
+        border: 2px solid var(--primary);
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        width: fit-content;
+
+        &:hover {
+          background-color: var(--faded);
+          transition: 0.5s ease;
+          cursor: pointer;
+        }
       }
     }
   }

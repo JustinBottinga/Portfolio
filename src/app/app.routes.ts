@@ -11,4 +11,5 @@ export const routes: Routes = [
     path: 'canvas',
     component: CanvasComponent,
   },
+  { path: '**', redirectTo: '' },
 ];
