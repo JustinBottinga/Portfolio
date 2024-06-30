@@ -1,6 +1,6 @@
 @echo off
 REM Step 1: Build the Angular Project
-ng build --configuration production --output-path docs --base-href /Portfolio/
+ng build --configuration production --output-path docs
 
 REM Step 2: Move the contents of 'browser' to 'docs'
 move docs\browser\* docs\
