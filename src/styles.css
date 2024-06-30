@@ -103,7 +103,6 @@ a {
 }
 
 .skills {
-  margin: 0.75rem;
   color: var(--text);
   background: linear-gradient(
     135deg,
