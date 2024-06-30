@@ -26,50 +26,79 @@ app-blob {
   }
 }
 
+
 main {
   height: 100vh;
-  display: flex;
+  display:flex;
   align-items: center;
+  margin-left: 10vw;
 
-  .header {
-    align-self: center;
-    max-width: 25rem;
-    padding: 2rem;
-    margin-right: 3rem;
-    background: linear-gradient(
-      135deg,
-      rgba(41, 41, 41, 0.4),
-      rgba(29, 29, 29, 0.5)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 0.5rem;
-    margin-left: 10vw;
+  
+    .image-container {
+      background-image: url('../../../assets/IMG_0864.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 20rem;
+      width: 20rem;
+      border: 3px solid var(--background);
+      border-radius: 100%;
+      margin: 2rem;
 
-    h2 {
-      margin: 0px;
     }
 
-    .links {
-      display: flex;
-      justify-content: space-between;
+    .header {
+      max-width: 25rem;
+      padding: 2rem;
+      margin-right: 3rem;
+      background: linear-gradient(
+        135deg,
+        rgba(41, 41, 41, 0.4),
+        rgba(29, 29, 29, 0.5)
+      );
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 0.5rem;
+  
 
-      a {
-        text-decoration: none;
-        margin: 0.25rem 0rem;
-        color: var(--primary);
-        border: 2px solid var(--primary);
-        padding: 0.5rem;
-        border-radius: 0.3rem;
-        width: fit-content;
-        align-self: start;
 
-        &:hover {
-          background-color: var(--faded);
-          transition: 0.5s ease;
-          cursor: pointer;
+      h2 {
+        margin: 0px;
+      }
+  
+      .links {
+        display: flex;
+        justify-content: space-between;
+  
+        a {
+          text-decoration: none;
+          margin: 0.25rem 0rem;
+          color: var(--primary);
+          border: 2px solid var(--primary);
+          padding: 0.5rem;
+          border-radius: 0.3rem;
+          width: fit-content;
+          align-self: start;
+  
+          &:hover {
+            background-color: var(--faded);
+            transition: 0.5s ease;
+            cursor: pointer;
+          }
         }
       }
+    }
+}
+
+
+
+@media screen and (max-width: 940px) {
+  main {
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+
+    .image-container {
+      margin: 0rem 0rem 2rem 0rem;
     }
   }
 }

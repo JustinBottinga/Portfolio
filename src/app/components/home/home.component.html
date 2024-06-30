@@ -1,17 +1,21 @@
 <app-navbar></app-navbar>
 <app-blob appScroll></app-blob>
 <main>
-  <div class="header">
-    <h2>Software developer</h2>
-    <p>
-      {{ calculateYearsPassed() }}-year-old student from the Netherlands,
-      passionate about modern technologies and eager to acquire new skills
-    </p>
-    <div class="links row">
-      <a (click)="scrollTo(about)">More about me</a>
-      <a (click)="scrollTo(projects)"> My recent projects </a>
+    <div class="header">
+      <h2>Software developer</h2>
+      <p>
+        {{ calculateYearsPassed() }}-year-old student from the Netherlands,
+        passionate about modern technologies and eager to acquire new skills
+      </p>
+      <div class="links row">
+        <a (click)="scrollTo(about)">More about me</a>
+        <a (click)="scrollTo(projects)"> My recent projects </a>
+      </div>
     </div>
-  </div>
+    <div class="image-container">
+      <!-- <img src="" alt="" width="100px"> -->
+    </div>
+
 </main>
 
 <div #about>

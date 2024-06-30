@@ -12,7 +12,7 @@
   overflow-x: visible;
   .blob {
     border-radius: 100px;
-    filter: blur(60px);
+    filter: blur(100px) grayscale(50%);
   }
 
   .yellow {
