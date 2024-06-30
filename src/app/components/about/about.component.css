@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1.5rem;
-    padding: 0.75rem;
+    padding: 0rem 0.75rem;
   }
   .skills {
     ul {
