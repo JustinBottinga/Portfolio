@@ -1,2 +1,8 @@
 <!-- <app-canvas></app-canvas> -->
+<div class="language-switch">
+  <button class="nl" [class.selected]="selected === 'nl'" (click)="switchLanguage('nl')"></button>
+
+  <button class="en" [class.selected]="selected === 'en'" (click)="switchLanguage('en')"></button>
+</div>
 <router-outlet></router-outlet>
+

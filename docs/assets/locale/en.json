@@ -1,0 +1,68 @@
+{
+    "degree": "Degree obtained.",
+    "jan": "january",
+    "feb": "february",
+    "mar": "march",
+    "apr": "april",
+    "may": "may",
+    "jun": "june",
+    "jul": "july",
+    "aug": "august",
+    "sep": "september",
+    "oct": "october",
+    "nov": "november",
+    "dec": "december",
+    "present": "Present",
+
+
+    "home": {
+        "text" : "-year-old student from the Netherlands, passionate about modern technologies and eager to acquire new skills",
+        "buttons": {
+            "about" : "More about me",
+            "projects": "My recent projects"
+        }
+    },
+    "about": {
+        "header": {
+            "work-experience": "Work Experience",
+            "education": "Education"
+        },
+        "work-items": {
+            "movie-unlimited": {
+                "text": "Service Employee"
+            },
+            "obimex": {
+                "text": "Warehouse Employee"
+            },
+            "moovd": {
+                "text": "Intern Software Developer"
+            }
+        },
+        "education-items": {
+            "havo": {
+                "text": "(Senior General Secondary Education)"
+            },
+            "mavo": {
+                "text": "(Lower General Secondary Education)"
+            },
+            "roc": {
+                "text": "Academic level"
+            }
+        }
+    },
+    "skills": {
+        "Flexible": "Flexible",
+        "Independent": "Independent",
+        "Solution-oriented": "Solution-oriented",
+        "Effective Communicator": "Effective Communicator",
+        "Determined": "Determined"
+    },
+    "projects": {
+        "text": "Projects",
+        "contributed": "Contributed to",
+        "during-internship": "During internship",
+        "webaze": "official Minecraft Marketplace project for"
+
+    }
+
+}

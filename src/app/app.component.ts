@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CanvasComponent } from './components/canvas/canvas.component';
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-root',
@@ -11,4 +13,19 @@ import { CanvasComponent } from './components/canvas/canvas.component';
 })
 export class AppComponent {
   title = 'portfolio';
+  selected: string;
+
+  constructor(private translateService: TranslateService){
+    this.translateService.setDefaultLang('nl')
+    this.selected = this.translateService.defaultLang
+  }
+
+  /**
+   * switchLanguage
+   * @argument language: string     */
+  public switchLanguage(language: string) {
+    this.selected == 'en' ? this.selected = 'nl' : this.selected = 'en';
+    this.translateService.use(language);
+    
+  }
 }

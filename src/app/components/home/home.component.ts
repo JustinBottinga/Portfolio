@@ -5,6 +5,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { AboutComponent } from '../about/about.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { ScrollDirective } from '../../directives/scroll.directive';
+import { TranslateModule, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -18,14 +19,18 @@ import { ScrollDirective } from '../../directives/scroll.directive';
     AboutComponent,
     ProjectsComponent,
     ScrollDirective,
+    TranslateModule
   ],
 })
 export class HomeComponent {
+
+
   scrollTo(el: HTMLElement): void {
     el.scrollIntoView({ behavior: 'smooth' });
   }
 
   calculateYearsPassed(): number {
+    
     let specificDate = new Date('2004-04-24'); // Example specific date
 
     const currentDate = new Date();

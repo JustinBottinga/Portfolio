@@ -117,3 +117,9 @@ a {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
