@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { BlobComponent } from '../blob/blob.component';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { FooterComponent } from '../footer/footer.component';
@@ -23,15 +23,19 @@ import { TranslateModule, TranslatePipe, TranslateService } from '@ngx-translate
   ],
 })
 export class HomeComponent {
+  @ViewChild('projects') projects!: ElementRef;
+  @ViewChild('about') about!: ElementRef;
 
+  public scrollTo(data: any) {
+    console.log(data);
 
-  scrollTo(el: HTMLElement): void {
-    el.scrollIntoView({ behavior: 'smooth' });
+    data == 'projects' ? this.projects.nativeElement.scrollIntoView({ behavior: 'smooth' }) : data == 'about' ? this.about.nativeElement.scrollIntoView({ behavior: 'smooth'}) : null;
   }
+
 
   calculateYearsPassed(): number {
     
-    let specificDate = new Date('2004-04-24'); // Example specific date
+    let specificDate = new Date('2004-04-24');
 
     const currentDate = new Date();
     const yearsPassed = currentDate.getFullYear() - specificDate.getFullYear();
@@ -42,7 +46,7 @@ export class HomeComponent {
       (currentDate.getMonth() === specificDate.getMonth() &&
         currentDate.getDate() < specificDate.getDate())
     ) {
-      return yearsPassed - 1; // Subtract 1 if we haven't reached the anniversary yet
+      return yearsPassed - 1;
     }
 
     return yearsPassed;

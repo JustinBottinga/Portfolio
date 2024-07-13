@@ -1,11 +1,5 @@
-app-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 .language-switch {
-  z-index: 99;
+  z-index: 200;
   position: fixed;
   right: 1rem;
   top: 1rem;  
@@ -50,4 +44,13 @@ app-canvas {
     right: 1rem;
     top: 1rem;  
   }
+} 
+
+
+/* app-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
+
+*/

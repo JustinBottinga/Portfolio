@@ -1,6 +1,6 @@
 :root {
   /* COLORS */
-  --text: #e9eae2;
+  /* --text: #e9eae2;
   --background: #010404;
   --primary: #00e5e8;
   --faded: #00e4e82c;
@@ -10,11 +10,118 @@
   --green: #ff3cc7;
 
   /* STYLES */
-  --background-glass: linear-gradient(
-    135deg,
-    rgba(41, 41, 41, 0.4),
-    rgba(29, 29, 29, 0.5)
-  );
+  /*
+  -- */
+
+  --background: #0d0d11;
+  --card-bg: #0f0f0f;
+  --card-border: #131518;
+  --chip-bg: #141418;
+  --chip-border: #1c1e22;
+  --button-bg: #1b2230 ;
+  --button-border: #2e3a52 ;
+
+  --text: #E7ECEC;
+  --text-secondary: #b0c4c4;
+  --primary: #A4D9D9;
+  --secondary: #258787;
+  --accent: #4DE2E2;
+  --font: "Inter", sans-serif;
+  --font-special: "Lora", serif;
+  --background-size: 10vw;
+
+
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --background-size: 25vw
+  }
+}
+
+.glows {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+}
+
+.glow {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.one {
+  background: linear-gradient(180deg, rgb(0, 68, 255) 0%, rgba(37,135,135,1) 100%);
+  height: 400px;
+  top: -150px;
+  left: 50%;
+  transform: scaleX(1.6);
+  opacity: 0.3;
+}
+
+.two{
+  background: linear-gradient(329deg, rgba(77,226,226,1) 0%, rgb(153, 0, 255) 100%);
+  height: 600px;
+  top: -300px;
+  left: -300px;
+  transform: scaleX(0.8);
+  opacity: 0.2;
+}
+
+.three {
+  background: linear-gradient(329deg, rgb(139, 61, 61) 0%, rgb(255, 123, 0) 100%);
+  height: 400px;
+  bottom: -200px;
+  right: -200px;
+  opacity: 0.2;
+}
+
+.blur {
+  height: 100%;
+  width: 100vw;
+  position: fixed; /* Ensure it covers the entire viewport */
+  top: 0; /* Ensure it covers the entire viewport */
+  left: 0; /* Ensure it covers the entire viewport */
+  z-index: 2;
+  backdrop-filter: blur(250px);
+
+
+}
+
+.grid {
+  position: absolute; /* Allow it to scroll with the content */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 45%; /* Ensure it covers the entire content area */
+  background-size: var(--background-size) var(--background-size);
+  background-image:
+    linear-gradient(to right, rgba(164, 217, 217, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(164, 217, 217, 0.1) 1px, transparent 1px);
+  z-index: 4; /* Ensure it's above the blur but below other content */
+  border-radius: 0 0% 100% 100%;
+
+    &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      background-repeat: repeat;
+      background-image: url('./assets/img/noise-effect-1.png');
+      mix-blend-mode: multiply;
+      opacity: .3;
+      z-index: 3; /* Ensure it's below the grid lines */
+    }
+
+
 }
 
 body {
@@ -29,7 +136,78 @@ body {
   padding: 0rem;
   margin: 0rem;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
+
+.primary {
+  color: var(--primary);
+}
+
+.font-special {
+  font-family: var(--font-special);
+}
+
+a {
+  color: var(--accent) !important;
+  opacity: .9;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    filter: brightness(1.2);
+    opacity: 1;
+    cursor: pointer;
+  } 
+}
+
+
+.card {
+  color: var(--text); 
+  background-color: var(--background);
+  border: 2px solid var(--chip-border);
+  border-radius: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: .2s;
+
+  small {
+    background-color: var(--chip-bg);
+    padding: .3rem .4rem;
+    border: 2px solid var(--chip-border);
+    border-radius: .5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 5px 0px;
+    text-wrap: nowrap;
+    white-space: nowrap; /* This will prevent text wrapping */
+  }
+
+  p.card-text {
+    color: var(--text-secondary) !important;
+  }
+
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: .5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(164, 217, 217, 0.2); 
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(164, 217, 217, 0.4); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(164, 217, 217, 1); 
+}
+
+/*
+
 
 a {
   text-decoration: none;
@@ -119,5 +297,5 @@ a {
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-
+ */
 

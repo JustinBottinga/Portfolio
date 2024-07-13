@@ -1,25 +1,60 @@
 .row {
+
   .head {
     display: flex;
     justify-content: space-between;
     align-items: end;
+    position: relative;
+
+
+    h3 {
+      text-align: center;
+      font-family: var(--font-special);
+      color: var(--primary);
+      font-size: 3rem;
+      width: 100%;
+    }
   }
 
   .header {
     display: flex;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    align-items: end;
+    justify-content: end;
+
 
     a {
-      border: 2px solid var(--primary);
-      color: var(--primary);
-      padding: 0.5rem;
-      border-radius: 0.3rem;
+      padding: .5rem 1rem ;
+      border-radius: 10rem;
+      text-decoration: none;
+      background-color: var(--button-bg);
+      color: var(--accent) !important;
+      border: 2px solid var(--button-border);
+      opacity: 1;
+      font-size: .9rem;
+      transition: .3s ease-in-out;
 
-      &:hover {
-        cursor: pointer;
-
-        background-color: var(--faded);
+      i {
+        font-size: 1rem;
       }
+
+
     }
   }
 }
+
+.card {
+  margin-bottom: 1.5rem;
+  p.card-text {
+    span {
+      color: var();
+      display: block;
+    }
+
+    i {
+      display: block;
+    }
+  }
+}
+
+
