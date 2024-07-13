@@ -126,7 +126,8 @@
 
 app-root {
   position: relative;
-  z-index: 5 !important;
+  -webkit-transform: translate3d(0,0,0);
+  z-index: 99;
 }
 
 body {
