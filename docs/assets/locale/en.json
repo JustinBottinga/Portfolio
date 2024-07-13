@@ -16,7 +16,7 @@
 
 
     "home": {
-        "text" : "A {{age}}-year-old student Software developer from the Netherlands, passionate about modern technologies and eager to acquire new skills.",
+        "text" : "A {{age}} year-old student Software developer from the Netherlands, passionate about modern technologies and eager to acquire new skills.",
         "buttons": {
             "about" : "Curriculum vitae",
             "projects": "Recent projects"
