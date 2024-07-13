@@ -16,7 +16,7 @@
 
 
     "home": {
-        "text" : "Een {{age}} jaar oude student Software developer uit Nederland, gepassioneerd door morderne techonologie en gedreven om nieuwe vaardigheden te bemachtigen.",
+        "text" : "Een {{age}} jaar oude student Software developer uit Nederland, gepassioneerd door moderne techonologie en gedreven om nieuwe vaardigheden te bemachtigen.",
         "buttons": {
             "about" : "Curriculum vitae",
             "projects": "Recente projecten"
