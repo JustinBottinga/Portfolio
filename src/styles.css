@@ -125,6 +125,7 @@
 }
 
 app-root {
+  position: relative;
   z-index: 5 !important;
 }
 
