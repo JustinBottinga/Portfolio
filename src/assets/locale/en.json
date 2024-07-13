@@ -16,13 +16,16 @@
 
 
     "home": {
-        "text" : "-year-old student from the Netherlands, passionate about modern technologies and eager to acquire new skills",
+        "text" : "A {{age}}-year-old student Software developer from the Netherlands, passionate about modern technologies and eager to acquire new skills.",
         "buttons": {
-            "about" : "More about me",
-            "projects": "My recent projects"
+            "about" : "Curriculum vitae",
+            "projects": "Recent projects"
         }
     },
     "about": {
+        "personal" : {
+            "text": "Currently, I am busy with my studies. I am open to work as a junior front-end developer. For any internship opportunities, You can always reach me via LinkedIn."
+        },
         "header": {
             "work-experience": "Work Experience",
             "education": "Education"
@@ -60,9 +63,9 @@
     "projects": {
         "text": "Projects",
         "contributed": "Contributed to",
-        "during-internship": "During internship",
-        "webaze": "official Minecraft Marketplace project for"
-
+        "during-internship": "during my internship at",
+        "webaze": "official Minecraft Marketplace project for",
+        "button": "View here"
     }
 
 }

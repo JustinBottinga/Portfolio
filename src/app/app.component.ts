@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild, ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CanvasComponent } from './components/canvas/canvas.component';
 import { TranslateService } from '@ngx-translate/core';
@@ -16,7 +16,7 @@ export class AppComponent {
   selected: string;
 
   constructor(private translateService: TranslateService){
-    this.translateService.setDefaultLang('en')
+    this.translateService.setDefaultLang('nl')
     this.selected = this.translateService.defaultLang
   }
 

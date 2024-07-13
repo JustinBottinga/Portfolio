@@ -16,13 +16,17 @@
 
 
     "home": {
-        "text" : " jaar oude student uit Nederland, gepassioneerd door moderne techonologie en gedreven om nieuwe vaardigheden te bemachtigen",
+        "text" : "Een {{age}} jaar oude student Software developer uit Nederland, gepassioneerd door morderne techonologie en gedreven om nieuwe vaardigheden te bemachtigen.",
         "buttons": {
-            "about" : "Meer over mij",
+            "about" : "Curriculum vitae",
             "projects": "Recente projecten"
         }
     },
     "about": {
+        "personal" : {
+            "text": "Momenteel houd ik me bezig met mijn opleiding. Ik sta open voor werk als junior front-end developer. Voor eventuele stages ben ik altijd bereikbaar via linkedin."
+        },
+
         "header": {
             "work-experience": "Werkervaring",
             "education": "Opleiding"
@@ -61,8 +65,10 @@
     "projects": {
         "text": "Projecten",
         "contributed": "Bijgedragen aan",
-        "during-internship": "tijdens stageperiode",
-        "webaze": "officieel Minecraft Marketplace project voor"
+        "during-internship": "tijdens mijn stageperiode bij",
+        "webaze": "officieel Minecraft Marketplace project voor",
+        "button": "Bekijk hier"
+
 
     }
 }
