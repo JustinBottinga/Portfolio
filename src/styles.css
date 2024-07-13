@@ -88,7 +88,6 @@
   z-index: 2;
   backdrop-filter: blur(250px);
 
-
 }
 
 .grid {
@@ -125,9 +124,10 @@
 }
 
 app-root {
-  position: relative;
-  -webkit-transform: translate3d(0,0,0);
-  z-index: 99;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  z-Index: 900000 !important;
 }
 
 body {
@@ -143,6 +143,7 @@ body {
   margin: 0rem;
   overflow-x: hidden;
   overflow-y: scroll;
+  z-index: 0;
 }
 
 .primary {
